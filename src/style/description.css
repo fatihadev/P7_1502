@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Nunito:wght@200&family=Roboto+Mono:wght@200&family=Roboto:wght@300&family=Shrikhand&family=Square+Peg&display=swap');
+
+.collapses {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+.collapse_title_log {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF6060;
+    color: white;
+    border-radius: 10px;
+}
+
+.title_log {
+    margin-left: 10px;
+}
+
+.icon {
+    color: white;
+    font-size: 20px;
+}
+
+.collapse_style_des {
+    width: 900px;
+    margin-left: 20px; 
+    margin-bottom: 30px; 
+   
+}
+
+.collapse_style_equi {
+    width: 900px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    
+}
+
+.collapse_description_log {
+    color: #FF6060;   
+    border-radius: 10px;
+    margin-top: 0px;    
+}
+
+.list_description{
+    height: 200px;
+}
+
+.list_equipment{
+    margin-top: 0px;    
+    height: 200px;
+    padding-left: 0px;
+}
+
+.info_description_log {
+    height: 100px;
+    margin-top: 0px;
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background-color: #F6F6F6;    
+}
+
+.info_description_log_equip {
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background-color: #F6F6F6; 
+}
+
+@media screen and (max-width: 768px) {
+    .collapses {
+        width: 700px;
+    }
+
+    .collapse_style_equi {
+        margin-left: 70px;
+    }
+
+    .info_description_log {
+        padding-top: 10px;
+    }
+}

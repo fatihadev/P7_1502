@@ -1,0 +1,22 @@
+.tags_host_rate {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.description {
+    margin-top: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .tags_host_rate {
+        flex-direction: column;
+        margin-right: 0px;
+    }
+
+    .host_rate {
+        display: flex;
+        margin-top: 50px;
+    }
+}

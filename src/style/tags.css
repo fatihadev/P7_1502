@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Nunito:wght@200&family=Roboto+Mono:wght@200&family=Roboto:wght@300&family=Shrikhand&family=Square+Peg&display=swap');
+
+
+    
+.lodgment_name
+{
+    font-family: 'Montserrat', sans-serif;    
+    margin-left: 7%;
+    margin-top: 0%;
+    color: red;
+}
+
+.lodgment_location
+{
+    font-family: 'Montserrat', sans-serif;    
+
+    color: red;
+    margin-left: 7%;
+}
+
+.list_tags
+{
+    display: flex;
+    justify-content: left;
+    margin-left: 7%;
+}
+
+.tags 
+{
+    background: #ff6060;
+    border-radius: 16px;
+    padding: 5px 16px 5px 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 13px;
+    margin-bottom: 5%;
+    margin-left: 5px;
+}
