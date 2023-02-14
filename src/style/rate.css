@@ -1,9 +1,7 @@
 .rate {
     display: flex;
-    display: flex;
-    left: 77%;
-    position: absolute;
-    margin-top: 145px;
+    justify-content: flex-end;
+    
 }
 
 .starColors {

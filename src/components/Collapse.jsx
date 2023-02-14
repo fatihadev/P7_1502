@@ -1,56 +1,75 @@
-import React from 'react'
-import '../style/collapses.css'
-import { useState } from 'react'
+import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-
+import '../style/collapses.css';
 
 
 function Collapse(props) {
-    console.log(props.col)
-    const [visible,setVisible] = useState (false);
-    const display = ()=>{setVisible(!visible)}
-    console.log(props.product.equipments)
 
-  return (
-    <div>
-      {props.col ?(
-        <div class="collapse">
-        <div className='title'>
-            <button type="button" class="collapse_title">{props.col.title}</button>
-            <p onClick={display} className="icon"  >{visible?<FontAwesomeIcon icon={faChevronUp} />:<FontAwesomeIcon icon={faChevronDown} />}</p>                
-        </div>
-            <div class="content">
-            {visible && <p class="infocollaps">{props.col.description}</p>}
+    const [ visible, setVisible ] = useState (false);
+    const display=() => {
+        setVisible(!visible);
+    }
+    console.log(props.info);
+    console.log(props.prod);
+    // console.log(props.prod.equipments);
+    // console.log(props.prod.description);
+    return (
+        <>        
+        {props.info ? (<section>
+            <div className="collapse_title" >                                              
+                <h2 className="title">{props.info.title}</h2>  
+                                                                        
+                <p onClick={display} className="icon" >{visible?<FontAwesomeIcon icon={faChevronUp} />:<FontAwesomeIcon icon={faChevronDown} />}</p>
+                 
             </div>
-    </div>
-      ):(
-        <div class="collapse">
-            <div className='title'>
-                <button type="button" class="collapse_title">equipements</button>
-                <p onClick={display} className="icon" >{visible?<FontAwesomeIcon icon={faChevronUp} />:<FontAwesomeIcon icon={faChevronDown} />}</p>                
+            <div className="collapse_description">
+                {visible && <p className="info_description">{props.info.description}</p>}
+               
             </div>
-                <div class="content">
-          
-                {visible && <p class="infocollapslog">{props.product.equipments}</p> }
-                  
-          
+        </section>)
+         : (
+           
+            <>
+            <div className="collapses">
+        <section className="collapse_style_des">
+            <div className="collapse_title_log">                                              
+                <h2 className="title_log">Description</h2>                                               
+                                    
+                <p className="icon" onClick={display}>{visible?<FontAwesomeIcon icon={faChevronUp} />:<FontAwesomeIcon icon={faChevronDown} />}</p>
+                
+            </div>
+            <div className="collapse_description_log">
+                <div className="list_description">
+                {visible && <p className="info_description_log">{props.prod.description}</p>}
                 </div>
+            </div>
+        </section>
+        <section className="collapse_style_equi">
+                <div className="collapse_title_log">                                              
+                    <h2 className="title_log">Equipements</h2>                                               
+                                        
+                    <p className="icon" onClick={display}>{visible?<FontAwesomeIcon icon={faChevronUp} />:<FontAwesomeIcon icon={faChevronDown} />}</p>
+                     
+                </div>
+                <div className="collapse_description_log">
+                    <ul className="list_equipment">
+                        {props.prod.equipments.map((equip =>                        
+                            visible &&<li className="info_description_log_equip">{equip}</li>
+                        ))}
+                    </ul>
+                </div>
+            </section>
+            </div>
+            </>
+        )}
 
-                <div className='title'>
-                <button type="button" class="collapse_title">description</button>
-                <p onClick={display} className="icon" >{visible?<FontAwesomeIcon icon={faChevronUp} />:<FontAwesomeIcon icon={faChevronDown} />}</p>                
-            </div>
-                <div class="content">
-                  
-                {visible &&  <p class="infocollaps">{props.product.description}</p>}
-                </div>
-    </div>
-      )}
-        
-    </div>
-  )
+
+
+
+    </>
+    )
 }
 
-export default Collapse
+export default Collapse;

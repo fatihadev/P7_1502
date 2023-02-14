@@ -1,25 +1,31 @@
-import React from 'react'
-import Collapse from '../components/Collapse'
+import Collapse from './Collapse';
+import '../style/collapses.css';
+import React, { useState } from "react";
 
-const Collapses = (props) => {
+
+function Collapses(props) {
   
-  return (
-    <div className='collapses'>
+    console.log(props.product);
+    console.log(props.collapseInformation);
 
+    
+    return (
 
+        <div className="collapse">
+     
+            <div> 
+                {props.product ?         
+                <Collapse prod={props.product}/> :
+                props.collapseInformation?.map((info) =>                             
+                <Collapse info={info}/>
+               ) 
+        } 
+            </div>                         
+             
+        </div>
+                    
+        )
         
-        {props.product ? 
-
-         <Collapse product={props.product}/>:
-           props.CollapseList.map((col)=>
-                
-          <Collapse col={col}/>
-          
-        )}
-
-    </div>
-  )
 }
 
-export default Collapses
-
+export default Collapses;

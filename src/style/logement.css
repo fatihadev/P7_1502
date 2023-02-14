@@ -9,6 +9,7 @@
     margin-top: 150px;
 }
 
+
 @media screen and (max-width: 768px) {
     .tags_host_rate {
         flex-direction: column;
@@ -18,5 +19,10 @@
     .host_rate {
         display: flex;
         margin-top: 50px;
+    }
+
+    .rate {
+        display: flex;
+        justify-content: flex-end;
     }
 }
