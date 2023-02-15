@@ -13,6 +13,7 @@ import Rate from '../components/Rate'
 const Logement = () => {
   
   const { id } = useParams();
+  // cherhcer id dans l'url
   console.log(id);  
    const product = productsList.find((p) =>  {return (":" + p.id) === (id);
   });
@@ -30,7 +31,9 @@ const Logement = () => {
           </div>
           <Tags product={product} />
           <Host  product={product} />
-          <Collapses product={product} />
+          <Collapses product={product} /> 
+          {/* product comme props */}
+          {/* du parent vers le fils, passer un props   */}
       <Footer />
     </div>
   )

@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 90px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Nunito:wght@200&family=Roboto+Mono:wght@200&family=Roboto:wght@300&family=Shrikhand&family=Square+Peg&display=swap');
@@ -31,6 +31,7 @@
     padding: 6px;
     border-radius: 5px;
     color: white;
+    margin-top: 50px;
     
 }
 

@@ -15,6 +15,7 @@ function Collapse(props) {
     console.log(props.prod);
     // console.log(props.prod.equipments);
     // console.log(props.prod.description);
+    // function 
     return (
         <>        
         {props.info ? (<section>
@@ -22,7 +23,7 @@ function Collapse(props) {
                 <h2 className="title">{props.info.title}</h2>  
                                                                         
                 <p onClick={display} className="icon" >{visible?<FontAwesomeIcon icon={faChevronUp} />:<FontAwesomeIcon icon={faChevronDown} />}</p>
-                 
+                 {/* ? = true et : (else) descendante */}
             </div>
             <div className="collapse_description">
                 {visible && <p className="info_description">{props.info.description}</p>}
@@ -30,10 +31,10 @@ function Collapse(props) {
             </div>
         </section>)
          : (
-           
+        // a props  
             <>
             <div className="collapses">
-        <section className="collapse_style_des">
+            <section className="collapse_style_des">
             <div className="collapse_title_log">                                              
                 <h2 className="title_log">Description</h2>                                               
                                     

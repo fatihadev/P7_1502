@@ -15,6 +15,8 @@ const Cards = () => {
         )}
     
     </div>
+
+    // map = for boucle itterarive pour repeter 
   )
 }
 

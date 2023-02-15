@@ -1,12 +1,13 @@
-import Collapse from './Collapse';
+import React from "react";
+import Collapse from './Collapse.jsx';
 import '../style/collapses.css';
-import React, { useState } from "react";
+
 
 
 function Collapses(props) {
   
     console.log(props.product);
-    console.log(props.collapseInformation);
+    console.log(props.CollapseList);
 
     
     return (
@@ -16,7 +17,7 @@ function Collapses(props) {
             <div> 
                 {props.product ?         
                 <Collapse prod={props.product}/> :
-                props.collapseInformation?.map((info) =>                             
+                props.CollapseList?.map((info) =>                             
                 <Collapse info={info}/>
                ) 
         } 
