@@ -5,23 +5,21 @@ import '../style/rate.css'
 
 function rate(props) {
     console.log(props.product.rating)
-
+// recu l'info depuis le parents
    
    const stars = [1, 2, 3, 4, 5];
   
-    return (      
-      <div className='rate'>
-
-          {stars.map((level) =>
-        
+    return (
+      <div className="rate">
+        {stars.map((level, key) =>
           props.product.rating >= level ? (
-           <img className="starColors" src={Pleine} alt=""/>
+            <img className="starColors" src={Pleine} alt="" />
           ) : (
-              <img className="starWhite" src={Vide} alt=""/>
-        ) )}
-
+            <img className="starWhite" src={Vide} alt="" />
+          )
+        )}
       </div>
-  )
+    );
 }
 
 export default rate

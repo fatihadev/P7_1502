@@ -8,21 +8,17 @@ const Tags = (props) => {
 
   return (
     <div>
+      <h1 className="lodgment_name">{props.product.title}</h1>
 
-        <h1 className="lodgment_name">{props.product.title}</h1>
-        
-        <p className='lodgment_location'>{props.product.location}</p>
-        
-        <div className='list_tags'>
-          {props.product.tags.map((el)=>
+      <p className="lodgment_location">{props.product.location}</p>
 
-            <span class="tags">{el}</span> 
-          )
-          }
-           
-        </div>
+      <div className="list_tags">
+        {props.product.tags.map((el,key) => (
+          <span className="tags">{el}</span>
+        ))}
+      </div>
     </div>
-  )
+  );
 }
 
 export default Tags

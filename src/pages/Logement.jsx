@@ -25,18 +25,18 @@ const Logement = () => {
   return (
     <div>
       <Header />
-          <Caroussel product={product} />
-          <div className='rate'>
-            <Rate product={product} />
-          </div>
-          <Tags product={product} />
-          <Host  product={product} />
-          <Collapses product={product} /> 
-          {/* product comme props */}
-          {/* du parent vers le fils, passer un props   */}
+      <Caroussel product={product} />
+      <div className="rate">
+        <Rate product={product} />
+      </div>
+      <Tags product={product} />
+      <Host product={product} />
+      <Collapses product={product} />
+      {/* passer des infos comme props */}
+      {/* */}
       <Footer />
     </div>
-  )
+  );
 }
 
 export default Logement

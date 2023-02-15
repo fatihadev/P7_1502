@@ -11,21 +11,17 @@ function Collapses(props) {
 
     
     return (
-
-        <div className="collapse">
-     
-            <div> 
-                {props.product ?         
-                <Collapse prod={props.product}/> :
-                props.CollapseList?.map((info) =>                             
-                <Collapse info={info}/>
-               ) 
-        } 
-            </div>                         
-             
+      <div className="collapse">
+        <div>
+          {props.product ? (
+            <Collapse prod={props.product} />
+          ) : (
+            props.CollapseList?.map((info, key) => <Collapse info={info} />)
+          )}
         </div>
-                    
-        )
+      </div>
+      // ce compenents est special car va etre appeler sur 2pages L et A
+    );
         
 }
 

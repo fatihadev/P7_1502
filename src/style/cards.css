@@ -1,42 +1,35 @@
 .container {
-    display: inline-block;
-    position: relative;
-  }
-  
-  
-  .container .textcard {
-    position: absolute;
-    margin-left: 10%;
-    margin-top: 232px;
-    color: white;
-    width: 80%;
-    font-size: 12px;
-  }
-  
-  
-  .cardhouse
-  {
-    width: 85%;
-    margin-left: 6%;
-    margin-bottom: 4%;
-    margin-top: 5%;
-    height: 299px;
-    border-radius: 21px;
-    position: center;
-  }
+  display: inline-block;
+  position: relative;
+}
 
+.container .textcard {
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 232px;
+  color: white;
+  width: 80%;
+  font-size: 12px;
+}
 
-@media all and (min-width: 466px) and (max-width: 992px){
-  .container
-  {
+.cardhouse {
+  width: 85%;
+  margin-left: 6%;
+  margin-bottom: 4%;
+  margin-top: 5%;
+  height: 299px;
+  border-radius: 21px;
+  position: center;
+}
+
+@media all and (min-width: 466px) and (max-width: 992px) {
+  .container {
     display: grid;
   }
-} 
+}
 
-@media all and (min-width: 992px) and (max-width:3000px) {
-
-  .cardhouse
-  {
+@media all and (min-width: 992px) and (max-width: 3000px) {
+  .cardhouse {
     width: 445px;
     margin-left: 3%;
     margin-bottom: 4%;
@@ -46,21 +39,15 @@
     position: center;
   }
 
-
-  .container
-  {
-        margin-left: 6%;
-  
+  .container {
+    margin-left: 6%;
   }
 
-  .cards 
-  {
+  .cards {
     background-color: rgb(202, 202, 202);
     width: 95%;
     margin-left: 3%;
     border-radius: 25px;
     margin-bottom: 5%;
   }
-
-
 }

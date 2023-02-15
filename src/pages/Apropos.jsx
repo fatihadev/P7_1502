@@ -12,12 +12,13 @@ import '../style/apropos.css';
 function Apropos() {
   return (
     <>
-        <Header/>
-          <Bannerabout />
-            <Collapses CollapseList={CollapseList} />
-        <Footer />
+      <Header />
+      <Bannerabout />
+      <Collapses CollapseList={CollapseList} />
+      {/* specifque a collapslist */}
+      <Footer />
     </>
-  )
+  );
 }
 
 export default Apropos;

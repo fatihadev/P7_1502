@@ -11,10 +11,10 @@ function Home() {
   return (
     <>
       <Header />
-        <Bannerhome />
-       
-        <Cards />
-    
+      <Bannerhome />
+
+      <Cards />
+
       <Footer />
     </>
   );
