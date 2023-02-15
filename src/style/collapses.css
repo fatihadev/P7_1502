@@ -65,7 +65,7 @@ left: 85%;
 
 
 
-@media all and (min-width: 768px) and (max-width: 992px) {
+@media all and (min-width: 751px) and (max-width: 992px) {
    
     .collapse
     {
@@ -175,7 +175,7 @@ left: 85%;
 }
 
 .info_description_log {
-    height: 100px;
+    height: 176px;
     margin-top: 0px;
     padding-top: 17px;
     padding-left: 10px;
@@ -194,11 +194,11 @@ left: 85%;
 
 
 
-@media screen and (max-width: 768px) {
-    .collapse {
+@media all and (min-width:420px)and (max-width: 750px) {
+    /* .collapse {
     display: block;
     
-        /* margin-left: 20px; */
+       
     }
 
     .collapse_title {        
@@ -227,5 +227,122 @@ left: 85%;
 
     .info_description_log {
         padding-top: 10px;
+    } */
+
+    .collapses, .collapse{
+        width:90%;
+        display: flex;
+    }
+    
+    .collapse_description_des
+    {
+        width: 0;
+        margin: 0;
+        
+    }
+    
+    .collapse_title_log{
+        justify-content: none;
+        width: 100%;
+    }
+    
+    .title_log
+    {
+        margin: 9%;
+        font-size: 16px;
+    }
+    
+    .list_description
+    {
+        height: 249px;
+    }
+    
+    .info_description_log{
+        padding-top: 20px;
+        font-size: 14px;
+    }
+    
+    .collapse_style_des, .collapse_style_equi
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:296px){
+.collapses{
+    width: 100%;
+    display: block;
+}
+
+.collapse_description_des
+{
+    width: 0;
+    margin: 0;
+    
+}
+
+.collapse_title_log{
+    justify-content: none;
+}
+
+.title_log
+{
+    margin: 0;
+    font-size: 14px;
+}
+
+.list_description
+{
+    height: 249px;
+}
+
+.info_description_log{
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+.collapse_style_des, .collapse_style_equi
+{
+    width: 100%;
+}
+}
+
+@media all and (min-width: 297px) and (max-width:420px){
+    .collapses, .collapse{
+        width:90%;
+        display: flex;
+    }
+    
+    .collapse_description_des
+    {
+        width: 0;
+        margin: 0;
+        
+    }
+    
+    .collapse_title_log{
+        justify-content: none;
+        width: 100%;
+    }
+    
+    .title_log
+    {
+        margin: 9%;
+        font-size: 16px;
+    }
+    
+    .list_description
+    {
+        height: 249px;
+    }
+    
+    .info_description_log{
+        padding-top: 20px;
+        font-size: 14px;
+    }
+    
+    .collapse_style_des, .collapse_style_equi
+    {
+        width: 100%;
     }
 }

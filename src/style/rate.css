@@ -19,9 +19,67 @@
     
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 766px) {
     .rating {
         margin-left: 0px;
         margin-top: 50px;
+    }
+
+    .rate{
+        position: relative;
+        top: 127px;
+        right: 15%;
+    }
+
+    .starColors, .starWhite
+    {
+        width: 25px;
+    height: 23px;
+    }
+}
+
+@media screen and (max-width:296px){
+    .starWhite{
+        width: 19px;
+height: 16px;
+margin-right: 32px;
+    }
+
+    .starColors{
+        height: 16px;
+        margin-right: 1px;
+        width: 20px;
+    }
+
+    .rate{
+            position: relative;
+    top: 84px;
+    }
+}
+
+@media screen and (min-width:768px){
+.rate{
+    top: 4.5rem;
+    right: 6%;
+    position: relative;
+}
+
+
+.starColors, .starWhite
+{
+    width: 20px;
+    height: 20px;
+    color: #FF6060;
+    margin-right: 0px;
+}
+}
+
+
+
+@media screen and (min-width:1390px){
+    .rate{
+        top: 4.5rem;
+        right: 7%;
+        position: relative;
     }
 }

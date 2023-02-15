@@ -1,15 +1,15 @@
 import React from 'react'
-import ProductsList from '../products/products.json'
 import Card from '../components/Card.jsx'
+import ProductList from '../products/products.json'
 
 
 const Cards = () => {
-    console.log(ProductsList)
+    console.log(ProductList)
 
   return (
     <div className='cards'>
         
-        {ProductsList.map((product)=>
+        {ProductList.map((product)=>
         
             <Card product={product}/>
         )}

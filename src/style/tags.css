@@ -36,3 +36,16 @@
     margin-bottom: 5%;
     margin-left: 5px;
 }
+
+@media screen and (max-width:296px){
+    .tags{
+        padding: 1px 1px 3px 3px;
+        font-size: 11px;
+        margin-left: 0; 
+    }
+
+    .lodgment_name
+    {
+        font-size: 12px;
+    }
+}
