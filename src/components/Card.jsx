@@ -3,9 +3,8 @@ import '../style/cards.css';
 import { Link } from 'react-router-dom';
 
 function Card(props) {
-console.log(props.product)
-// recu les infos en question recuperer le props que l'ont a passer dans le fichier parent
-
+  console.log(props.product);
+  // recu les infos en question recuperer le props que l'ont a passer dans le fichier parent
 
   return (
     <div className="container">

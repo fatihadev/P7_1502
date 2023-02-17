@@ -77,7 +77,7 @@ function Collapse(props) {
                 <div className="collapse_description_log">
                   <ul className="list_equipment">
                     {props.prod.equipments.map(
-                      (equip,key) =>
+                      (equip, key) =>
                         visible && (
                           <li key={key} className="info_description_log_equip">
                             {equip}

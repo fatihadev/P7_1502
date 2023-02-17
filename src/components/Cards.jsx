@@ -7,18 +7,15 @@ const Cards = () => {
     console.log(ProductList);
 
   return (
-    <div className='cards'>
-        
-        {ProductList.map((product, key)=>
-        
-            <Card key={key} product={product}/>
-        )}
-    
+    <div className="cards">
+      {ProductList.map((product, key) => (
+        <Card key={key} product={product} />
+      ))}
     </div>
 
     //il fait le map sur la liste des produits, on a passe les infos specifique pr chaque carte
-    // vers card grace au props 
-  )
+    // vers card grace au props
+  );
 }
 
 export default Cards
