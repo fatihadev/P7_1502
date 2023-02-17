@@ -39,9 +39,10 @@
 
 @media screen and (max-width:296px){
     .tags{
-        padding: 1px 1px 3px 3px;
-        font-size: 11px;
-        margin-left: 0; 
+        padding: 1px 0px 1px 0px;
+        font-size: 6.5px;
+        margin-left: 1px;
+        border-radius: 5px;
     }
 
     .lodgment_name

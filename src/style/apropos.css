@@ -4,4 +4,13 @@
     border-radius: 25px;
 }
 
+@media  screen and (max-width: 232px) {
+  .banner_apropos{
+    object-fit: cover;
+    height: 76px;
+  }
+  
+  
+  }
+
 

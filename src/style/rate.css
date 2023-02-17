@@ -1,6 +1,6 @@
 .rate {
     display: flex;
-    justify-content: flex-end;
+    
     
 }
 
@@ -26,7 +26,7 @@
     }
 
     .rate{
-        position: relative;
+  
         top: 127px;
         right: 15%;
     }
@@ -52,16 +52,26 @@ margin-right: 32px;
     }
 
     .rate{
-            position: relative;
-    top: 84px;
+           
+    top: 0px;
+    justify-content: flex-end;
     }
 }
+@media  screen and (max-width: 232px){
+.rate{
+    
+    margin-left: 114px;
+    top: 5%;
+    margin-right: 0;
+}
+}
+
 
 @media screen and (min-width:768px){
 .rate{
     top: 4.5rem;
     right: 6%;
-    position: relative;
+    
 }
 
 
@@ -80,6 +90,6 @@ margin-right: 32px;
     .rate{
         top: 4.5rem;
         right: 7%;
-        position: relative;
+      
     }
 }

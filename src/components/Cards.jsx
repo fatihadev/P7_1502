@@ -9,7 +9,7 @@ const Cards = () => {
   return (
     <div className='cards'>
         
-        {ProductList.map((product, key)=>
+        {ProductList.map((product)=>
         
             <Card product={product}/>
         )}

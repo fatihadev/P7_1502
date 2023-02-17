@@ -26,11 +26,11 @@ const Logement = () => {
     <div>
       <Header />
       <Caroussel product={product} />
+      <Tags product={product} />
+      <Host product={product} />
       <div className="rate">
         <Rate product={product} />
       </div>
-      <Tags product={product} />
-      <Host product={product} />
       <Collapses product={product} />
       {/* passer des infos comme props */}
       {/* */}

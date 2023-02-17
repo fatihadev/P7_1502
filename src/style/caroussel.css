@@ -51,12 +51,29 @@
   top: 170px;
 }
 
+@media  screen and (max-width: 232px){
+
+  .right{
+    font-size: 50px;
+  }
+
+  .left{
+    font-size: 50px;
+  }
+
+  .carousel{
+    height: 510px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .caroussel_img {
     width: 90%;
     margin-left: 6%;
   }
 }
+
+
 
 /* .carousel {
     height: 600px;

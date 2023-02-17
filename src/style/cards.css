@@ -20,6 +20,15 @@
   height: 299px;
   border-radius: 21px;
   position: center;
+  object-fit: cover;
+}
+
+@media  screen and (max-width: 232px) {
+  h1
+  {
+    font-size: 12px;
+    margin-top: 23px;
+  }
 }
 
 @media all and (min-width: 466px) and (max-width: 992px) {
