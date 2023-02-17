@@ -11,7 +11,7 @@ function rate(props) {
   
     return (
       <div className="rate">
-        {stars.map((level, key) =>
+        {stars.map((level) =>
           props.product.rating >= level ? (
             <img className="starColors" src={Pleine} alt="" />
           ) : (
