@@ -3,8 +3,7 @@ import '../style/tags.css'
 
 
 const Tags = (props) => {
-    console.log(props)
-
+  console.log(props);
 
   return (
     <div>
