@@ -14,7 +14,7 @@ const Tags = (props) => {
 
       <div className="list_tags">
         {props.product.tags.map((el,key) => (
-          <span className="tags">{el}</span>
+          <span key={key} className="tags">{el}</span>
         ))}
       </div>
     </div>

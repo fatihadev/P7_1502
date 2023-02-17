@@ -11,11 +11,11 @@ function rate(props) {
   
     return (
       <div className="rate">
-        {stars.map((level) =>
+        {stars.map((level, key) =>
           props.product.rating >= level ? (
-            <img className="starColors" src={Pleine} alt="" />
+            <img key={key} className="starColors" src={Pleine} alt="" />
           ) : (
-            <img className="starWhite" src={Vide} alt="" />
+            <img key={key} className="starWhite" src={Vide} alt="" />
           )
         )}
       </div>

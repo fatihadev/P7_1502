@@ -16,7 +16,7 @@ function Collapses(props) {
           {props.product ? (
             <Collapse prod={props.product} />
           ) : (
-            props.CollapseList?.map((info, key) => <Collapse info={info} />)
+            props.CollapseList?.map((info, key) => <Collapse key={key} info={info} />)
           )}
         </div>
       </div>
