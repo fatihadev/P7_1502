@@ -6,8 +6,9 @@ import "../style/collapses.css";
 
 function Collapse(props) {
   const [visible, setVisible] = useState(
-    props.info ? false : props.prod.equipments.map(() => false)
+    props.info ? [false] : props.prod.equipments.map(() => false)
   );
+
   const display = (index) => {
     setVisible((prevState) => {
       const newState = [...prevState];
@@ -15,8 +16,6 @@ function Collapse(props) {
       return newState;
     });
   };
-
-  // tester si collapse est ouverte ou ferme
 
   return (
     <>
@@ -46,8 +45,8 @@ function Collapse(props) {
               <div className="collapse_title_log">
                 <h2 className="title_log">Description</h2>
 
-                <p onClick={() => display(1)} className="icon">
-                  {visible[1] ? (
+                <p onClick={() => display(0)} className="icon">
+                  {visible[0] ? (
                     <FontAwesomeIcon icon={faChevronUp} />
                   ) : (
                     <FontAwesomeIcon icon={faChevronDown} />
@@ -56,7 +55,7 @@ function Collapse(props) {
               </div>
               <div className="collapse_description_log">
                 <div className="list_description">
-                  {visible[1] && (
+                  {visible[0] && (
                     <p className="info_description_log">
                       {" "}
                       {props.prod.description}
@@ -70,8 +69,8 @@ function Collapse(props) {
               <div className="collapse_title_log">
                 <h2 className="title_log">Equipements</h2>
 
-                <p onClick={() => display(2)} className="icon">
-                  {visible[2] ? (
+                <p onClick={() => display(1)} className="icon">
+                  {visible[1] ? (
                     <FontAwesomeIcon icon={faChevronUp} />
                   ) : (
                     <FontAwesomeIcon icon={faChevronDown} />
@@ -84,7 +83,7 @@ function Collapse(props) {
                     <li
                       key={index}
                       className="info_description_log_equip"
-                      style={{ display: visible[2] ? "block" : "none" }}
+                      style={{ display: visible[1] ? "block" : "none" }}
                     >
                       {equip}
                     </li>
